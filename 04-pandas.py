@@ -7,8 +7,13 @@ marks = pd.DataFrame({
     "student_id":[101,102,103,105],
     "marks":[80,90,75,88]
 })
+<<<<<<< HEAD
 result = pd.merge(students,marks,on="student_id",how="inner")
 print(result)
+=======
+# result = pd.merge(students,marks,on="student_id",how="inner")
+# print(result)
+>>>>>>> a1767660f1f0c031e45602aa0c8803bc645fefde
 
 result = pd.merge(students,marks,on="student_id",how="left")
 print(result)
@@ -106,3 +111,5 @@ print(df)
 
 # Assessment 1: read two excel sheets and generate output output.xlsx
 # (one.xlsx & two.xlsx) --> output.xlsx
+# result = pd.merge(students,marks,on="student_id",how="outer")
+# print(result)
