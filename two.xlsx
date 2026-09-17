@@ -1,0 +1,38 @@
+data_two={
+'ID':[3,4,5,6,7]
+'Name':['Anu','Lakshmi','Datta','Madhu','Grace'],
+'Salary':[50000,60000,70000,65000],
+'Department':['IT','HR','Finance','IT','Digital Marketing']
+
+}
+df_two = pd.DataFrame(data_two)
+df_two.to_excel('two.xlsx',index=False)
+print('Created two.xlsx')
+print(df_two)
+print()
+
+
+#=====================================================================
+STEP2: READ THE EXCEL FILES
+#=====================================================================
+
+#Read both Excel FILES
+df1 =pd.read_excel('one.xlsx')
+df2= pd.read_excel('two.xlsx')
+
+print("=" * 60)
+print("data from one.xlsx:")
+print(df1)
+print("\ndata from two.xlsx:")
+print(df2)
+print("=" * 60)
+print()
+
+
+#=====================================================================
+STEP3: MERGE USING DIFFERENT JOIN TYPES
+#=====================================================================
+
+#------INNER JOIN-------
+#Returns only rows with matching keys in both tables
+inner_join= pd.merge(df1,df2,on='ID',how='inner',suffixes=())

@@ -1,0 +1,13 @@
+import pandas as pd
+mydata_one = {
+'ID':[1,2,3,4,5]
+'Name':['Sai','Chinnu','Anu','Lakshmi','Datta'],
+'Age':[28,30,35,40,45],
+'City':['San Fransisco','Austraila','Paris','Egypt','NewZeland']
+
+}
+df_one= pd.DataFrame(mydata_one)
+df_one.to_excel('one.xlsx',index=False)
+print("Created one.xlsx")
+print(df_one)
+print()
