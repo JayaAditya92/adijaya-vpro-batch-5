@@ -195,3 +195,12 @@
 #         print(num)
 #     inner()
 # outer()
+
+# Example-1
+d1 = {
+    "num1" : 200,
+    "num2" : 100
+}
+print(d1.keys())        # tuple(list)
+print(d1.values())      # tuple
+print(d1.items())       # tuple
