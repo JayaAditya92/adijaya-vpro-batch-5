@@ -1,0 +1,4 @@
+fastapi                  #develop api calls
+uvicorn                  #light-weight server, to deploy and run api calls
+pymongo                  # connect to cloud db(atlas)
+python-dotenv            # read data from .env file
