@@ -8,3 +8,5 @@ i love python
 you love ai
 we love machine learning
 VPro founded by Sambasiva Rao Pendela
+
+https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
