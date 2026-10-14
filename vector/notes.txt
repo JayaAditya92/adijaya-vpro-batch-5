@@ -1,0 +1,86 @@
+DataBases
+*********
+    DataBases are used to persist the data
+
+Types
+*****
+    1) SQL DataBases
+    2) NoSQL DataBases
+    3) Vector DataBases
+
+SQL DataBases
+*************
+    Ex.
+            Oracle
+            MySQL
+            SQLServer
+
+            Tables
+            Rows
+            RDBMS
+
+NoSQL DataBases
+***************
+Ex.
+        MongoDB
+        CasandraDB
+        DynamoDB
+        Cosmos
+        ---
+        ---
+        ---
+
+    collections (tables) 
+    documents
+
+            SQL                             NoSQL
+
+    1) Ex.                              Ex.
+                Oracle                          MongoDB
+                MySQL                           CasandraDB
+                SQLServer                       ---
+                ---                             ---
+                ---
+                ---
+
+    2) DataBases                        DataBases
+            Ex.                         Ex.
+                    empdb                   empdb
+                    stddb                   stddb
+
+    3) Tables                           collections
+
+    4) Rows                             documents
+
+    5) primary key                      _id
+
+
+Vector DataBases
+****************
+    used to store embeddings
+    LLMS only understands embeddings
+
+    1) FAISS
+    2) ChromaDB
+    3) Pinecone
+
+FAISS
+*****
+ Feature                                 FAISS(Facebook AI Similarity Search)                ChromaDB                      Pinecone
+ 
+ Type                                    Search Library                                    Vector database                 Cloud vector database                                                        
+ Installation                            Python package                                    Python package or server        Cloud account and SDK
+ Storage                                 Index: Persistance managed by you                 Built in Persistance options    Managed by Cloud storage
+ Store documents and metadata            you manage them                                   Yes                              yes
+ Embeddings generation                   External model                                    External model or integrations  External model or integrated options
+ Cloud management                        You manage it                                     Self-hosted or options          Managed service  
+ Learning difficulty                     Easy-medium                                       Easy                            Easy-medium
+ Best for                                Fast vector Search                                RAG prototypes and apps         Managed production systems
+
+
+
+ Suppose your are buliding AI an chatbot for your VPRO skills course notes:
+
+ FAISS: Fast retrival
+ ChromaDB: To store documents, ids, metadatas and POC'S choose ChromaDB.
+ Pinecone: I need by default cloud support, Pinecone db.
